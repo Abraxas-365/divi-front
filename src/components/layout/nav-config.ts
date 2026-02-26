@@ -1,5 +1,5 @@
 import type { LucideIcon } from "lucide-react";
-import { Home, Settings } from "lucide-react";
+import { Car, Home, Settings } from "lucide-react";
 
 export interface NavSubItem {
   label: string;
@@ -21,11 +21,15 @@ export interface NavGroup {
 
 export const navConfig: NavGroup[] = [
   {
-    label: "Overview",
-    items: [{ label: "Home", to: "/", icon: Home }],
+    label: "General",
+    items: [{ label: "Inicio", to: "/", icon: Home }],
   },
   {
-    label: "Administration",
-    items: [{ label: "Settings", to: "/settings", icon: Settings }],
+    label: "Inspecciones",
+    items: [{ label: "Veh\u00edculos", to: "/vehicles", icon: Car }],
+  },
+  {
+    label: "Administraci\u00f3n",
+    items: [{ label: "Configuraci\u00f3n", to: "/settings", icon: Settings }],
   },
 ];

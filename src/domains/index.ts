@@ -8,6 +8,7 @@ import { env } from "@/lib/env";
 import { authSchema } from "./auth/service";
 import { invitationsSchema } from "./invitations/service";
 import { usersSchema } from "./users/service";
+import { vehiclesSchema } from "./vehicles/service";
 
 // ─── Session Expiry Handler ─────────────────────────────────────────────────
 
@@ -23,6 +24,7 @@ const schema = {
   auth: authSchema,
   invitations: invitationsSchema,
   users: usersSchema,
+  vehicles: vehiclesSchema,
 };
 
 const client = createApiClient({
